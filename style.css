@@ -1,0 +1,186 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #222;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #eeb3b3;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin-bottom: 0;
+}
+
+/* Main */
+main {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+section {
+  background-color: white;
+  padding: 24px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  margin-top: 0;
+  color: #8e0000;
+}
+
+/* Form */
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+form input {
+  flex: 1;
+  min-width: 200px;
+}
+
+form select {
+  min-width: 130px;
+}
+
+/* Buttons */
+button {
+  background-color: #fa89e1;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:hover {
+  background-color: #088a70;
+}
+
+/* Error message */
+#error-message {
+  color: red;
+  font-weight: bold;
+  min-height: 24px;
+}
+
+/* Search */
+#search-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+#notes-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#notes-list li {
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.category-personal {
+  border-left: 5px solid #0ba184 !important;
+}
+
+.category-work {
+  border-left: 5px solid #8e0000 !important;
+}
+
+.category-study {
+  border-left: 5px solid #2563eb !important;
+}
+
+.note-category {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.note-date {
+  display: block;
+  color: #777;
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+.delete-btn {
+  margin-top: 10px;
+  background-color: #c0392b;
+}
+
+.delete-btn:hover {
+  background-color: #a93226;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  form input,
+  form select,
+  form button {
+    width: 100%;
+  }
+
+  main {
+    margin-top: 20px;
+  }
+
+  section {
+    padding: 18px;
+  }
+}
